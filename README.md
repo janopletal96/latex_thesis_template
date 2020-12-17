@@ -4,7 +4,7 @@ This is my master thesis template for use at VŠB - Technical University of Ostr
 
 ## Your information
 
-To change titlepage, just customize text in the brackets.
+To change titlepage, just customize text in the brackets located in the `main.tex` file.
 
 ```tex
 %%%% your information
