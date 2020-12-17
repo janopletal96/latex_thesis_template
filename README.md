@@ -107,7 +107,7 @@ I would recommend using argument `[H]` which places the float precisely at the l
 
 ## Fonts
 
-Big advantage of typesetting with LuaLaTeX is, that you can use any font, that is stored in your computer, __BUT YOU HAVE TO DOWNLOAD THEM__. To change font go into `config/preamble.tex` 
+Big advantage of typesetting with LuaLaTeX is, that you can use any font, that is stored in your computer, __BUT YOU HAVE TO DOWNLOAD THIS FONTS__. To change fonts go into `config/preamble.tex` 
 
 ```tex
 \usepackage{fontspec} 
@@ -131,7 +131,7 @@ If you want your thesis to look great, I would recommend sticking with either _C
 
 To make headers/footers I use `fancyhdr` package. To customise go to `main.tex`
 
-```
+```tex
 % head/footnote settings for chapters
 \pagestyle{fancy}	%makes headers/footers
 \fancyhf{}
