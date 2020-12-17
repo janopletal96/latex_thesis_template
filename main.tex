@@ -1,0 +1,90 @@
+\documentclass[a4paper, 12pt]{scrartcl}
+\makeatletter
+\input{config/preamble}
+\makeatother
+\usepackage{xr}
+\usepackage{subfiles}
+ 	\externaldocument[M-]{\subfix{main}}
+\usepackage{graphicx}
+
+%%%% your information
+\university{your university}
+\faculty{your faculty}
+\department{your department}
+\title{Title name}
+\titleen{Title name (english)} % if you dont want second title name, add % before \@titleen in titlepage settings in config/preamble.tex
+\author{your name}
+\supervisor{your supervisor}
+\city{Ostrava}
+\year=2021
+
+\begin{document}
+\renewcommand{\refname}{Seznam použité literatury} % bibliography label
+
+\pagestyle{plain}     % without head/footnote
+\pagenumbering{roman} % roman numbering I,II,III,...
+
+%%%% titlepage
+\maketitle
+
+%%%% assignment (substitute with your pdf file in /config/assignment.pdf)
+\includepdf[fitpaper=true, pages={1}]{config/assignment.pdf}
+
+%%%% declaration/annotation
+\subfileinclude{chapters/declaration_annotation}
+
+%%%% TOC
+\tableofcontents
+
+%%%% nomenclature using \msym \msho commands
+\subfileinclude{chapters/nomenclature}
+
+\setcounter{page}{1}   % sets counting pages from start
+\pagenumbering{arabic} % arabic numbering
+
+%%%% introduction
+\subfileinclude{chapters/introduction}
+
+% head/footnote settings for chapters
+\pagestyle{fancy}	
+\fancyhf{}
+\rhead{Diplomová práce}
+\lhead{VŠB -- TUO}
+\chead{your name}
+\lfoot{Title name}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+
+%%%% chapters
+\subfileinclude{chapters/chapter_01}
+
+\subfileinclude{chapters/chapter_02}
+
+\subfileinclude{chapters/chapter_03}
+
+\subfileinclude{chapters/chapter_04}
+
+\subfileinclude{chapters/chapter_05}
+
+\subfileinclude{chapters/chapter_06}
+
+\subfileinclude{chapters/chapter_07}
+
+\pagestyle{plain} 
+
+%%%% conclusion
+\subfileinclude{chapters/conclusion}
+
+%%%% bibliography
+\addcontentsline{toc}{section}{Seznam použité literatury}
+\bibliographystyle{config/czechisounsrt}
+\bibliography{main}
+
+%%%% appendixes/thanks
+\subfileinclude{chapters/appendix}	
+		
+\end{document}
+
+
