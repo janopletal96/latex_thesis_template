@@ -111,7 +111,7 @@ Big advantage of typesetting with LuaLaTeX is, that you can use any font, that i
 
 ```tex
 \usepackage{fontspec} 
-%\defaultfontfeatures{Ligatures=TeX}
+\defaultfontfeatures{Ligatures=TeX}
 %	\setmainfont{TeXGyreTermes-Regular}[
 %		BoldFont       = TeXGyreTermes-Bold ,
 %		ItalicFont     = TeXGyreTermes-Italic ,
