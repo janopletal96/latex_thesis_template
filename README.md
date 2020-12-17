@@ -107,7 +107,7 @@ I would recommend using argument `[H]` which places the float precisely at the l
 
 ## Fonts
 
-Big advantage of typesetting with LuaLaTeX is, that you can use any font, that is stored in your computer, __BUT YOU HAVE TO DOWNLOAD THOSE FONTS__. To change fonts go into `config/preamble.tex` 
+Big advantage of typesetting with LuaLaTeX is, that you can use any font, that is stored in your computer, __BUT YOU HAVE TO DOWNLOAD AND INSTALL THOSE FONTS__. To change fonts go into `config/preamble.tex` 
 
 ```tex
 \usepackage{fontspec} 
