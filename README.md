@@ -127,6 +127,35 @@ Big advantage of typesetting with LuaLaTeX is, that you can use any font, that i
 
 If you want your thesis to look great, I would recommend sticking with either _Computer modern_ (used by default) or _TeXGyre_ (like Times/Helvetica). To use _TeXGyre_ delete `%` at the beginning of each line (uncomment).
 
+## Headers/footers
+
+To make headers/footers I use `fancyhdr` package. To customise go to `main.tex`
+
+```
+% head/footnote settings for chapters
+\pagestyle{fancy}	%makes headers/footers
+\fancyhf{}
+\rhead{Diplomová práce} %right side headers
+\lhead{VŠB -- TUO} %left side headers
+\chead{your name} %center headers
+\lfoot{Title name} %left side footers
+\rfoot{\thepage} %right side footers
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+```
+
+Headers and footers are used only for chapters/sections.
+
+## Nomenclature
+
+Nomenclature can be done by using commands `\msym` and `\msho` as shown in the template. The commands are defined by:
+
+```tex
+\newcommand{\msym}[3]{\noindent\parbox[t]{3cm}{#1}\parbox[t]{9cm}{#2}\hfill\parbox[t]{2cm}{[#3]}\vspace{12pt}} 
+\newcommand{\msho}[2]{\parbox[t]{3cm}{#1}\parbox[t]{12cm}{#2}\vspace{12pt}\\}
+```
+
+
 ## Bibliography
 
 You can add bibliography into `main.bib` file and print it by `\cite{"key"}` command.
