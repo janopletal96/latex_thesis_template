@@ -163,3 +163,11 @@ You can add bibliography into `main.bib` file and print it by `\cite{"key"}` com
 Bibliography style is set to czechinounsrt. For this purpose you will find `czechinounsrt.bst` file in main directory.
 
 More information about bibliography here: https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
+
+## Useful links
+
+TBD
+
+## Last word
+
+I am open to any ideas, that would improve this template. Hope you will find this template useful.
