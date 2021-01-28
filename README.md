@@ -103,7 +103,7 @@ I would recommend you to make subfolder, where you can store all figures. Then y
 \end{figure}
 ```
 
-I would recommend using argument `[H]` which places the float precisely at the location in the LaTeX code. For more information check: https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
+I would recommend using argument `[H]` which places the float precisely at the location in the LaTeX code or argument `[hbt]` and let LaTeX do the magic. For more information check: https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
 
 ## Fonts
 
