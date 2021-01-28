@@ -11,8 +11,8 @@ To change title page, customise text in the brackets located in the `main.tex` f
 \university{your university}
 \faculty{your faculty}
 \department{your department}
-\title{Title page}
-\titleen{Title page (en)}
+\title{Title}
+\titleen{Title (en)}
 \author{your name}
 \supervisor{your supervisor}
 \city{Ostrava}
@@ -21,7 +21,7 @@ To change title page, customise text in the brackets located in the `main.tex` f
 
 ### Title page
 
-To customise title page go to the `preamble.tex` and scroll down to the bottom of the `.tex` file. There you will find this setup. 
+For those who are not from VŠB or want to customise titlepage go to the `preamble.tex` and scroll down to the bottom of the `.tex` file. There you will find this setup. 
 
 ```tex
 %%%% titlepage
